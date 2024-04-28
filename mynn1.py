@@ -7,7 +7,7 @@ class MyNN1(tf.keras.Model):
     def __init__(self, in_dim: int, out_dim: int, libfunc_width=None, layers=6, name=None):
         super().__init__(name=name)
         self.in_dim = in_dim
-        self.out_dim = out_dim
+        self.out_dim = out_dim 
         self.lib_func_add = [
             tf.keras.layers.Lambda(lambda x: 1),
             tf.keras.layers.Lambda(lambda x: x),
